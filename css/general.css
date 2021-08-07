@@ -27,6 +27,7 @@
     - Shades: #cf711f
     - Accents: 
     - Grey: 
+    #6f6f6f
     #555
     #333
 
@@ -184,3 +185,5 @@ body {
 strong {
     font-weight: 500;
 }
+
+
