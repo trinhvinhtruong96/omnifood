@@ -1,14 +1,14 @@
+/******************************/
+
+/* HEADER */
 
 /******************************/
-/* HEADER */
-/******************************/
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background-color: #fdf2e9;
-
     height: 9.6rem;
     padding: 0 4.8rem;
 }
@@ -18,8 +18,11 @@
 }
 
 /******************************/
+
 /* NAVIGATION */
+
 /******************************/
+
 .main-nav-list {
     display: flex;
     list-style: none;
@@ -28,12 +31,9 @@
     align-items: center;
 }
 
-.main-nav-item {
+.main-nav-item {}
 
-}
-
-.main-nav-link:link, 
-.main-nav-link:visited {
+.main-nav-link:link, .main-nav-link:visited {
     display: inline-block;
     text-decoration: none;
     color: #333;
@@ -41,28 +41,27 @@
     transition: all 0.3s;
 }
 
-.main-nav-link:hover, 
-.main-nav-link:active {
+.main-nav-link:hover, .main-nav-link:active {
     color: #e67e22;
 }
 
-.main-nav-link.nav-cta:link, 
-.main-nav-link.nav-cta:visited {
+.main-nav-link.nav-cta:link, .main-nav-link.nav-cta:visited {
     padding: 1.2rem 2.4rem;
     border-radius: 9px;
     color: #fff;
     background-color: #e67e22;
 }
 
-.main-nav-link.nav-cta:hover, 
-.main-nav-link.nav-cta:active {
+.main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
     background-color: #cf711f;
-
 }
 
 /******************************/
+
 /* HERO SECTION */
+
 /******************************/
+
 .section-hero {
     background-color: #fdf2e9;
     padding: 4.8rem 0 9.6rem 0;
@@ -73,7 +72,6 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 9.6rem;
-
     max-width: 130rem;
     margin: 0 auto;
     padding: 0 3.2rem;
@@ -120,9 +118,13 @@
     color: #CF711F;
     font-weight: 700;
 }
+
 /******************************/
+
 /* FEATURED IN SECTION */
+
 /******************************/
+
 .section-featured {
     padding: 4.8rem 0 3.2rem 0;
 }
@@ -141,7 +143,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .logos img {
@@ -151,7 +152,9 @@
 }
 
 /******************************/
+
 /* HOW SECTION */
+
 /******************************/
 
 .section-how {
@@ -177,21 +180,15 @@
     justify-content: center;
 }
 
-.step-img-box::before,
-.step-img-box::after
- {
+.step-img-box::before, .step-img-box::after {
     content: "";
     display: block;
-
     border-radius: 50%;
     /* height: 60%; */
-
-
-
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
 }
 
@@ -202,7 +199,7 @@
 }
 
 .step-img-box::after {
-     width: 45%;
+    width: 45%;
     padding-bottom: 45%;
     background-color: #fae5d3;
 }
@@ -211,16 +208,18 @@
     width: 35%;
 }
 
+/******************************/
+
+/* MEALS SECTION */
 
 /******************************/
-/* MEALS SECTION */
-/******************************/
+
 .section-meals {
     padding: 9.6rem 0;
 }
 
 .meal {
-    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.1);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.4s;
@@ -228,11 +227,11 @@
 
 .meal:hover {
     transform: translateY(-1.2rem);
-    box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-content {
-    padding: 3.2rem 4.8rem 4.8rem 4.8rem ;
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-tags {
@@ -248,8 +247,6 @@
     text-transform: uppercase;
     border-radius: 50px;
     font-weight: 600;
-
-
 }
 
 .tag.tag--vegetarian {
@@ -295,34 +292,14 @@
     width: 100%;
 }
 
-.list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-}
-
-.list-item {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-}
-
-.list-item ion-icon {
-    font-size: 3rem;
-    color: #e67e22;
-}
-
 .all-recipes {
     display: flex;
     justify-content: center;
     font-size: 1.8rem;
 }
 
-.link:visited,
-.link:link {
-display: inline-block;
+.link:visited, .link:link {
+    display: inline-block;
     color: #e67e22;
     text-decoration: none;
     border-bottom: 1px solid currentColor;
@@ -330,15 +307,17 @@ display: inline-block;
     transition: all 0.3;
 }
 
-.link:hover,
-.link:active {
+.link:hover, .link:active {
     color: #cf711f;
     border-bottom: 1px solid transparent;
 }
 
 /******************************/
+
 /* MEALS SECTION */
+
 /******************************/
+
 .section-testimonials {
     background-color: #fdf2e9;
     display: grid;
@@ -395,7 +374,83 @@ display: inline-block;
     transform: scale(1.1);
 }
 
+/******************************/
 
+/* PRICING SECTION */
 
+/******************************/
 
+.section-pricing {
+    padding: 9.6rem 0;
+}
 
+.pricing-plan {
+    border-radius: 11px;
+    width: 75%;
+}
+
+.pricing-plan--starter {
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+    justify-self: start;
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+    content: "Best value";
+    position: absolute;
+    top: 6%;
+    right: -18%;
+
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #ffd43b;
+    padding: 0.8rem 8rem;
+    transform: rotate(45deg);
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.plan-name {
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem;
+}
+
+.plan-price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+
+.plan-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #6f6f6f;
+}
+
+.plan-sign-up {
+    text-align: center;
+    margin-top: 4.8rem;
+}

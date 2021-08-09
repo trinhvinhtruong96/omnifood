@@ -62,8 +62,11 @@ body {
     font-weight: 400;
     color: #555;
 }
+
 /******************************/
+
 /* GENERAL REUSEABLE COMPONENTS */
+
 /******************************/
 
 .container {
@@ -75,8 +78,16 @@ body {
 .grid {
     display: grid;
     gap: 9.6rem 6.4rem;
+    /* margin-bottom: 9.6rem; */
 }
 
+/* .grid:last-child {
+    margin-bottom: 0;
+} */
+
+.grid:not(last-child) {
+    margin-bottom: 9.6rem;
+}
 
 .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -94,9 +105,7 @@ body {
     align-items: center;
 }
 
-.heading-primary,
-.heading-secondary,
-.heading-tertiary  {
+.heading-primary, .heading-secondary, .heading-tertiary {
     font-weight: 700;
     /* color: #333; */
     color: #45260a;
@@ -107,7 +116,6 @@ body {
     font-size: 5.2rem;
     line-height: 1.05;
     margin-bottom: 3.2rem;
-
 }
 
 .heading-secondary {
@@ -132,40 +140,53 @@ body {
     letter-spacing: 0.75px;
 }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
     display: inline-block;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
-
     transition: all 0.3s;
 }
 
-.btn--full:link,
-.btn--full:visited {
+.btn--full:link, .btn--full:visited {
     background-color: #e67e22;
     color: #fff;
 }
 
-.btn--full:hover,
-.btn--full:active {
+.btn--full:hover, .btn--full:active {
     background-color: #cf711f;
 }
 
-.btn--outline:link,
-.btn--outline:visited {
+.btn--outline:link, .btn--outline:visited {
     background-color: #fff;
     color: #555;
 }
 
-.btn--outline:hover,
-.btn--outline:active {
+.btn--outline:hover, .btn--outline:active {
     background-color: #fdf2e9;
     /* border: 2px solid #fff; */
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-item ion-icon {
+    font-size: 3rem;
+    color: #e67e22;
 }
 
 /* HEPPER CLASSES */
@@ -185,5 +206,3 @@ body {
 strong {
     font-weight: 500;
 }
-
-
