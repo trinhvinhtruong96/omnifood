@@ -31,9 +31,11 @@
     align-items: center;
 }
 
-.main-nav-item {}
+.main-nav-item {
+}
 
-.main-nav-link:link, .main-nav-link:visited {
+.main-nav-link:link,
+.main-nav-link:visited {
     display: inline-block;
     text-decoration: none;
     color: #333;
@@ -41,18 +43,21 @@
     transition: all 0.3s;
 }
 
-.main-nav-link:hover, .main-nav-link:active {
+.main-nav-link:hover,
+.main-nav-link:active {
     color: #e67e22;
 }
 
-.main-nav-link.nav-cta:link, .main-nav-link.nav-cta:visited {
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
     padding: 1.2rem 2.4rem;
     border-radius: 9px;
     color: #fff;
     background-color: #e67e22;
 }
 
-.main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
     background-color: #cf711f;
 }
 
@@ -115,7 +120,7 @@
 }
 
 .delivered-text span {
-    color: #CF711F;
+    color: #cf711f;
     font-weight: 700;
 }
 
@@ -180,7 +185,8 @@
     justify-content: center;
 }
 
-.step-img-box::before, .step-img-box::after {
+.step-img-box::before,
+.step-img-box::after {
     content: "";
     display: block;
     border-radius: 50%;
@@ -298,7 +304,8 @@
     font-size: 1.8rem;
 }
 
-.link:visited, .link:link {
+.link:visited,
+.link:link {
     display: inline-block;
     color: #e67e22;
     text-decoration: none;
@@ -307,7 +314,8 @@
     transition: all 0.3;
 }
 
-.link:hover, .link:active {
+.link:hover,
+.link:active {
     color: #cf711f;
     border-bottom: 1px solid transparent;
 }
@@ -453,4 +461,37 @@
 .plan-sign-up {
     text-align: center;
     margin-top: 4.8rem;
+}
+
+.plan-details {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/******************************/
+
+/* FEATURE SECTION */
+
+/******************************/
+
+.feature-icon {
+    color: #e67e22;
+    font-size: 3.2rem;
+    margin-bottom: 3.2rem;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+
+.feature-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.feature-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
